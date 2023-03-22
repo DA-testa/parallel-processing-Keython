@@ -20,9 +20,8 @@ def main():
     # TODO: create the function
     result = parallel_processing(n,m,data)
     # TODO: print out the results, each pair in it's own line
-
     for j,k in result:
-        print(j, k)
+        print(k, j)
 
 if __name__ == "__main__":
     main()
