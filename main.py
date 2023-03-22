@@ -5,14 +5,11 @@ def parallel_processing(n, m, data):
     th=[0]*n
     # TODO: write the function for simulating parallel tasks, 
     # create the output pairs
-    for i in range(m):
+    for i in range(0,m):
         minth=min(th)
-        print(minth)
-        print(th[th.index(minth)])
-        th[th.index(minth)]= th[th.index(minth)]+data[i]
-
+        ieksa=th[(th.index(min(th)))]
+        output.append((ieksa,minth))
     return output
-
 def main():
     # TODO: create input from keyboard
     # input consists of two lines
@@ -28,7 +25,9 @@ def main():
     # TODO: create the function
     result = parallel_processing(n,m,data)
     # TODO: print out the results, each pair in it's own line
-    for i,k in result:
-        print(i, k)
+
+    for j,k in result:
+        print(j, k)
+
 if __name__ == "__main__":
     main()
