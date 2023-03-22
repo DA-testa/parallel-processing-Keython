@@ -7,7 +7,7 @@ def parallel_processing(n, m, data):
     # create the output pairs
     for i in range(m):
         minth=min(th)
-        print(th.index(minth))
+        print(minth)
         print(th[th.index(minth)])
         th[th.index(minth)]= th[th.index(minth)]+data[i]
 
